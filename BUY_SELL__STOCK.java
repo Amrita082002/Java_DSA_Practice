@@ -40,3 +40,29 @@ public class BUY_SELL__STOCK {
 }
 
 
+class Solution {
+    
+    public int maxProfit(int[] prices) {
+        
+        int n = prices.length;
+        int profit = 0;
+        int buy_price = prices[0];
+
+        for (int i = 1; i < n; i++) {
+
+            if (prices[i] < buy_price) {
+                buy_price = prices[i];
+            }
+
+            int curprof = prices[i] - buy_price;
+
+            if (curprof > profit) {
+                profit = curprof;
+            }
+        }
+
+        return profit;
+    }
+}
+
+
