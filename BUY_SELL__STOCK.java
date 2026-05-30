@@ -1,3 +1,5 @@
+--Time: 1 ms
+    
 package arrays;
 
 import java.util.Scanner;
@@ -39,7 +41,8 @@ public class BUY_SELL__STOCK {
     }
 }
 
-
+--Time: 2 ms
+    
 class Solution {
     
     public int maxProfit(int[] prices) {
